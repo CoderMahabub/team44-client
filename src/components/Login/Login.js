@@ -25,6 +25,7 @@ const Login = () => {
             <Container>
                   <Grid style={{ height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Grid xs={12} sm={9} md={6} lg={6}>
+<<<<<<< HEAD
                               <form onSubmit={handleSignIn}>
                                     <h1>{user?.email}</h1>
                                     <h1 style={{ color: 'green' }}>Please Login Here</h1>
@@ -34,6 +35,14 @@ const Login = () => {
                                     <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained' type='submit'>Login</Button>
                                     <br />
                               </form>
+=======
+                              <h1 style={{ color: 'green' }}>Please Login Here</h1>
+                              <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='email' label="Email" name='email' placeholder='Enter your Email' variant="standard" />
+                              <br />
+                              <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='password' label="Password" name='password' placeholder='Enter your password' variant="standard" />
+                              <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained'>Login</Button>
+                              <br />
+>>>>>>> 04e58763dd12de5018fc87eef6a302b47e795ab8
                               <Typography variant='caption'>Do not have an account?<Link to='/register'>Register Here</Link></Typography>
                               <br />
                               <Button onClick={googleSignIn} style={{ width: '50%', marginTop: '25px', marginBottom: '15px', backgroundColor: 'lightBlue', color: 'green' }} ><Google /> LogIn With Google</Button>
