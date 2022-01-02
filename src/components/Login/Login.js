@@ -23,7 +23,7 @@ const Login = () => {
                               <h1 style={{ color: 'green' }}>Please Login Here</h1>
                               <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='email' label="Email" name='email' placeholder='Enter your Email' variant="standard" />
                               <br />
-                              <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='password' label="Password" name='password' placeholder='Enter your passoword' variant="standard" />
+                              <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='password' label="Password" name='password' placeholder='Enter your password' variant="standard" />
                               <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained'>Login</Button>
                               <br />
                               <Typography variant='caption'>Do not have an account?<Link to='/register'>Register Here</Link></Typography>
