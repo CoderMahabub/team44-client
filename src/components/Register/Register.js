@@ -1,3 +1,4 @@
+import { Google } from '@mui/icons-material';
 import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -27,9 +28,14 @@ const Register = () => {
                               <br />
                               <TextField onBlur={handleBlur} sx={{ width: '100%', marginTop: '10px' }} type='password' name='password2' label="Password" placeholder='Confirm passoword' variant="standard" />
 
-                              <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained'>Login</Button>
+                              <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained'>Register</Button>
                               <br />
                               <Typography variant='caption'>Already have an account?<Link to='/login'>Login Here</Link></Typography>
+
+                              <br />
+
+                              <Button style={{ width: '50%', marginTop: '25px', marginBottom: '15px', backgroundColor: 'lightBlue', color: 'green' }} ><Google /> SingIn With Google</Button>
+
                         </Grid>
                   </Grid>
             </Container >

@@ -1,3 +1,4 @@
+import { Google } from '@mui/icons-material';
 import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -26,6 +27,8 @@ const Login = () => {
                               <Button style={{ width: '100%', marginTop: '25px', marginBottom: '15px' }} variant='contained'>Login</Button>
                               <br />
                               <Typography variant='caption'>Do not have an account?<Link to='/register'>Register Here</Link></Typography>
+                              <br />
+                              <Button style={{ width: '50%', marginTop: '25px', marginBottom: '15px', backgroundColor: 'lightBlue', color: 'green' }} ><Google /> LogIn With Google</Button>
                         </Grid>
                   </Grid>
             </Container >
