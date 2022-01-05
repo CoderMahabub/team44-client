@@ -22,7 +22,10 @@ function App() {
           <Route path="/write" element={user ? <Write /> : <Register />} />
           <Route path="/login" element={user ? <Home /> : <Login />} />
           <Route path="/register" element={user ? <Home /> : <Register />} />
-          <Route path="/settings" element={user ? <Settings /> : <Register />} />
+          <Route
+            path="/settings"
+            element={user ? <Settings /> : <Register />}
+          />
           <Route path="/post/:postId" element={<Single />} />
         </Routes>
       </div>
