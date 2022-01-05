@@ -1,0 +1,91 @@
+.contact {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://res.cloudinary.com/abidazad/image/upload/v1637850616/rzziongpsjdiuhtkc3i1.jpg");
+  background-size: cover;
+}
+
+.c {
+  height: 100vh;
+  position: relative;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-desc {
+  font-weight: 200;
+  font-size: 32px;
+  color: #fff;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #59b256;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-desc {
+    margin-top: 10px;
+  }
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
